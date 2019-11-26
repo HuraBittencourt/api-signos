@@ -1,5 +1,5 @@
+const Sign = require('../models/sign');
 const isBetween = (date, start, end) => (start <= date) && (date <= end)
-
 const toDate = stringDate => new Date(stringDate)
 
 exports.getSigno = date => ({
@@ -17,3 +17,12 @@ exports.getSigno = date => ({
     [isBetween(toDate(date), toDate('12-22'), toDate('12-31'))]: 'Capricórnio',
     [isBetween(toDate(date), toDate('01-01'), toDate('01-19'))]: 'Capricórnio',
 });
+
+exports.newRegister = user => {
+    const sign = {
+        ...user,
+        starSign: this.getSigno(user.birthdate).true
+    };
+    const newSign = new Sign(sign);
+    return newSign.save().then(() => sign)
+}
