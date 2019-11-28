@@ -1,50 +1,50 @@
 exports.getSigno = {
     ['01']: {
-        ['19']: 'Capricórnio',
-        ['20']: 'Aquario'
+        ['19']: 'Capricorn',
+        ['20']: 'Aquarius'
     },
     ['02']: {
-        ['18']: 'Aquário',
-        ['19']: 'Peixes'
+        ['18']: 'Aquarius',
+        ['19']: 'Pisces'
     },
     ['03']: {
-        ['20']: 'Peixes',
-        ['21']: 'Áries'
+        ['20']: 'Pisces',
+        ['21']: 'Aries'
     },
     ['04']: {
-        ['19']: 'Áries',
-        ['20']: 'Touro'
+        ['19']: 'Aries',
+        ['20']: 'Taurus'
     },
     ['05']: {
-        ['20']: 'Touro',
-        ['21']: 'Gêmeos'
+        ['20']: 'Taurus',
+        ['21']: 'Gemini'
     },
     ['06']: {
-        ['20']: 'Gêmeos',
-        ['21']: 'Câncer'
+        ['20']: 'Gemini',
+        ['21']: 'Cancer'
     },
     ['07']: {
-        ['22']: 'Câncer',
-        ['23']: 'Leão'
+        ['22']: 'Cancer',
+        ['23']: 'Leo'
     },
     ['08']: {
-        ['22']: 'Leão',
-        ['23']: 'Virgem'
+        ['22']: 'Leo',
+        ['23']: 'Virgo'
     },
     ['09']: {
-        ['22']: 'Virgem',
+        ['22']: 'Virgo',
         ['23']: 'Libra'
     },
     ['10']: {
         ['22']: 'Libra',
-        ['23']: 'Escorpião'
+        ['23']: 'Scorpio'
     },
     ['11']: {
-        ['21']: 'Escorpião',
-        ['22']: 'Sagitário'
+        ['21']: 'Scorpio',
+        ['22']: 'Sagittarius'
     },
     ['12']: {
-        ['21']: 'Sagitário',
-        ['22']: 'Capricórnio'
+        ['21']: 'Sagittarius',
+        ['22']: 'Capricorn'
     }
 }
