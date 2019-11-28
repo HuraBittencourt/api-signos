@@ -1,7 +1,7 @@
 const express = require('express');
-const SignoController = require('./controllers/signo');
-const database = require('./database');
+const SignoController = require('./controllers/Sign');
 const port = process.env.PORT || 3000;
+const url_service = process.env.URL_SERVICE || 'http://localhost';
 
 const app = express();
 
@@ -10,11 +10,10 @@ app.get('/', (req, response) => {
 });
 
 app.get('/signo/:name/:birthdate', (req, response) => {
-    const { name, birthdate } = req.params;
-    // const teste = SignoController.getSigno(birthdate)
-    const teste = SignoController.newRegister({ name, birthdate });
-    teste.then(sign => response.send({ "starSign": sign.starSign }));
+    SignoController.newRegisterController(req, response);
 });
 
 
-app.listen(port, () => console.log(`Escutando porta ${port}... http://localhost:${port}`));
+app.listen(port, () => console.log(`Escutando porta ${port}... ${url_service}:${port}`));
+
+module.exports = app;

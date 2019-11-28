@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_USERNAME = 'apisign';
-const MONGO_PASSWORD = '1234';
 const MONGO_HOSTNAME = process.env.HOSTNAME || 'localhost';
-const MONGO_PORT = '27017' || process.env.DB_PORT;
 const MONGO_DB = 'apisign';
 
 // const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
